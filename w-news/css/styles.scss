@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F2F2F2;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #5E607A;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+}
+.container {
+    max-width: 1130px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.fbx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header.fbx {
+    justify-content: space-between;
+}
+.header {
+    padding-top: 90px;
+    padding-bottom: 55px;
+    &__logo {
+    }
+    & > a {
+        line-height: 0;
+    }
+    &__burger {
+
+        &-lines {
+            display: none;
+        }
+
+        &-cross {
+            display: none;
+        }
+    }
+
+    &__menu {
+        column-gap: 40px;
+        row-gap: 24px; 
+        &-item {
+        }
+
+        &-link {
+            color: #5E607A;
+            transition: 0.4s;
+        }
+        &-link:hover {
+            color: #F15D51;
+        }
+    }
+}
+
+.activ {
+
+    &-menu {
+    }
+}
+.main {
+
+    &__banner {
+        column-gap: 30px;
+        row-gap: 64px;
+        &-start {
+            max-width: 730px;
+        }
+
+        &-bg {
+            margin-bottom: 28px;
+            height: 300px;
+            background-image: url('../assets/images/bg/image-web-3-desktop.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &-annonce {
+            column-gap: 30px;
+            row-gap: 16px;
+        }
+        &-annonce h1 {
+            font-weight: 800;
+            font-size: 56px;
+            line-height: 56px;
+            color: #00001A;
+            max-width: 350px;
+        }
+
+        &-content p {
+            margin-bottom: 29px;
+            max-width: 350px;
+        }
+        &-content a {
+            background-color: #F15D51;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 4.375px;
+            color: #FFFDFA;
+            width: 185px;
+            height: 48px;
+            transition: 0.4s;
+        }
+        &-content a:hover {
+            color: #FFFDFA;
+            background-color: #00001A;
+        }
+
+        &-end {
+            max-width: 350px;
+            background-color: #00001A;
+            padding: 32px 24px 31px;
+        }
+        &-end h2 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            color: #E9AA52;
+            margin-bottom: 34px;
+        }
+        &-end h3 {
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFDFA;
+            margin-bottom: 8px;
+            transition: 0.4s;
+        }
+        &-end h3:hover {
+            cursor: pointer;
+            color: #E9AA52;
+        }
+        &-end p {
+            color: #C5C6CE;
+        }
+        &-end article:not(:last-child) {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #5E607A;
+            margin-bottom: 30px;
+        }
+    }
+}
+.footer {
+    padding-top: 70px;
+    padding-bottom: 130px;
+    column-gap: 30px;
+    row-gap: 32px;
+    &__item {
+        padding-left: 124px;
+        max-width: 350px;
+    }
+    &__item:first-child {
+        background-image: url('../assets/images/bg/image-retro-pcs.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &__item:nth-child(2) {
+        background-image: url('../assets/images/bg/image-top-laptops.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &__item:last-child {
+        background-image: url('../assets/images/bg/image-gaming-growth.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &__item h2 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #C5C6CE;
+        margin-bottom: 12px;
+    }
+    &__item h3 {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 24px;
+        color: #00001A;
+        margin-bottom: 9px;
+        transition: 0.4s;
+    }
+    &__item h3:hover {
+        cursor: pointer;
+        color: #F15D51;
+    }
+}
